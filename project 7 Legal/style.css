@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    color: #ffffff;
+    font-family: roboto,sans-serif,Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+p{
+    opacity: 75%;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 8vw;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2vw  ;
+    width: 90vw;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:1vw;
+    width: 60%;
+}
+.heading{
+    background-color: #202020; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    border-radius: 1vw;
+    padding: 1vw;
+}
+.headText{
+    width: 60%;
+ 
+}
+.headText h1{
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 1.2;
+    
+}
+.headText h3{
+    font-size: 2.5vw;
+    font-weight: 900;
+    color:#6F6F6F;
+}
+.logo{
+    background-color: white;
+    border-radius: 50%;
+    width: 12vw;
+    height: 11.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo i{
+    color: black;
+    font-size: 5vw;
+}
+.row{
+    background-color:#404040 ;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1vw;
+
+}
+.row h2{
+    font-size: 4vw;
+    font-weight: 400;
+}
+.row p{
+    font-size: 2.4vw;
+    font-weight: 400;
+}
+img{
+    width: 37.6%;
+    border-radius: 1vw;
+    max-height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 1024px) {
+    .container {
+        margin-top: 40vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left {
+        width: 100%; 
+    }
+    img {
+        width: 90%;
+     }
+}
+@media (max-width: 768px) {
+    .headText h1 {
+        font-size: 6vw;
+    }
+
+    .headText h3 {
+        font-size: 4vw;
+    }
+
+    .row h2 {
+        font-size: 5vw;
+    }
+
+    .row p {
+        font-size: 3vw;
+    }
+    img {
+        width: 100%;
+    }
+}
