@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "roboto",sans-serif;
+}
+body{
+    background-image: url(img/bg.png);
+    background-size: cover;
+    background-position: center center ;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+.container{
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;;
+    padding-top: 5vw;
+}
+.col1{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+h1{
+    background-color: aliceblue;
+    padding: 2vw 6vw;
+    font-size: 5vw;
+}
+i{
+    font-size: 30rem;
+    position: fixed;
+    z-index: -1;
+    color: #FFFFFF87;
+    right: 25vw;
+    top: 6vw;
+}
+.col1 p{
+    font-size: large;
+    font-weight: 400;
+    width: 55vw;
+    padding-left: 6vw;
+    padding-bottom: 4rem;
+    color: #29415E;
+}
+.col1 h2{
+    text-align: center;
+    position: relative;
+   
+}
+h2 span{
+    color: white;
+    background-color: #556272;
+    font-weight: 300;
+    font-size:2rem;
+    padding: 1vw 2vw;
+    display: inline-block;
+
+ 
+    
+}
+#top{
+  top: 0;
+}
+
+.col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35vw;
+}
+.links{
+    text-align: right;
+    padding-right: 6vw;
+    
+}
+#num{
+    text-decoration: none;
+    color: black;
+
+    font-weight: 500;
+    font-size: 2rem;
+}
+#email{
+    color: black;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.col2 h2{
+    font-weight: 700;
+    color: #29415E;
+    font-size: 2.5rem;
+}
+ul{
+    color: #29415E;
+    padding: 0;
+    list-style-position: inside;
+    list-style-type: '- '; 
+}
+li{
+    
+    margin: 0.3vw;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+@media screen and (max-width: 518px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 0;
+    }
+    .col1{
+        height: 45vh;
+        justify-content: space-evenly;
+    }
+    .col1 p{
+        width: 100%;
+        padding: 2rem;
+    }
+    .col1 h1{
+        width: fit-content;
+        margin: auto;
+        font-size: 9vw;
+    }
+    .col1 h2{
+      
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .col2{
+        height: 55vh;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    i{
+        font-size: 50vw;
+        
+    }
+
+}

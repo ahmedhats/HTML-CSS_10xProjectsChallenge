@@ -116,40 +116,87 @@ h2 {
     text-align: center;
     font-size: 2vw;
 }
-@media screen and (max-width:690px){
-    .container{
-        flex-wrap: wrap;
+
+@media screen and (max-width: 690px) {
+    body {
+        padding: 0 1rem;
     }
-    nav{
-        /* flex-direction: column; */
-        order: 1;
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        /* mak items fit in nav rather going under the banner*/
+        gap: 1rem;
     }
-    .logo i{
+
+    .logo {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .logo i {
         font-size: 2rem;
     }
-    .logo h1{
-        font-size: 1rem;
+
+    .logo h1 {
+        font-size: 1.5rem;
+        justify-self: center;
     }
-    .logo p{
-        font-size: small;
+
+    .logo p {
+        font-size: 0.8rem;
     }
+
     .info {
-        align-items: end;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    #tel {
+        font-size: 1.2rem;
+    }
+
+    .innerNav {
         flex-wrap: wrap;
-        gap: 1vw;
-        width: 50%;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1vw;
     }
-    
-    #tell{
-        font-size: ;
+
+    .main {
+        flex-direction: column;
+        gap: 2rem;
     }
-    .banner{
-     order: 4;
+
+    .col {
+        width: 90%;
+        align-self: center;
     }
-    .main{
-        order: 2;
+
+    .banner {
+        border-radius: 1VW;
     }
-    .callUs{
-        order: 3;
+
+    .main img {
+        border-radius: 2VW;
+        height: auto;
+    }
+
+
+    h2 {
+        font-size: 1.5rem;
+        /* Adjust heading size */
+    }
+
+    .callUs {
+        width: auto;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        margin: 1rem auto;
     }
 }
